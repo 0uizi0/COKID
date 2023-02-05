@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Navbar Animation</title>
+    <link rel="stylesheet" href="explanation.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <a href="#" style="color: white; text-decoration: none;"><h3 class="logo">COKID <span>explanation</span></h3></a>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="main-container">
+        <div class="main">
+          <header>
+            <div class="overlay">
+              <div class="inner">
+                <h2 class="title">Snake Game</h2>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="shadow one"></div>
+        
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="game.html" style="--i: 0.05s;" download>GAME html</a>
+          </li>
+          <li>
+            <a href="gameStyle.css" style="--i: 0.1s;" download>GAME css</a>
+          </li>
+          <li>
+            <a href="gameApp.js" style="--i: 0.15s;" download>GAME js</a>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.2s;"></a>
+          </li>
+          <li>
+            <a href="index.html" style="--i: 0.25s;">COKID</a>
+          </li>
+          <li>
+            <a href="explanation.html" style="--i: 0.3s;">Explanation</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sec_1" id="sec_1">
+        <p>
+            - <b>gameApp.js</b> 연동 <br><br>
+            - 엔터 키를 사용해 게임 시작
+            - 키보드에 있는 방향 키를 이용해 조종 <br><br>
+            - 단계를 깨기 전까지 점점 게임 화면이 흐려지도록 설정<br><br>
+            - 단계를 깨면 <b>score</b>가 1씩 올라감<br><br>
+            - 제한된 네모 박스에 부딪히거나, 스스로 자기 몸통에 부딪히면 게임 종료<br><br>
+        </p>
+    </div>
+    <script src="explanation_app.js"></script>
+  </body>
+</html>

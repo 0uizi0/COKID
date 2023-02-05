@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>COKID</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">COKID</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="game.html">Work</a></li>
+                <li><a href="explanation.html">Explanation</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="space.png" id="space">
+            <h2 id="text">Welcome to COKID</h2>
+            <a href="#sec" id="btn">Explore</a>
+        </section>
+        <div class="sec" id="sec">
+            <h2>Portfolio</h2>
+            <h3>Profile</h3>
+            <img src="profile.jpeg">
+            <a href="https://github.com/0uizi0" ><img src="github_icon.png" width="30" height="25"></a><p>https://github.com/0uizi0</p>
+            <P>김은정 </P>
+            <p>010-1234-5678</p>
+            <br><br>
+            <h3>사용 기술</h3>
+            <p><b>Swift</b>
+                <br>hello world!
+            </p><br>
+            <p><b>Java</b>
+                <br>hello world!<br>
+            </p><br>
+            <p><b>Spring</b>
+                <br>hello world!<br>
+            </p><br>
+            <p><b>Python</b>
+                <br>hello world!<br>
+            </p><br>
+            <p><b>Git</b>
+                <br>hello world!<br>
+            </p>
+
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let space = document.getElementById('space');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                stars.style.left=value*0.05+'px';
+                space.style.top=value*0+'px';
+                text.style.marginRight = value*1.8+'px';
+                text.style.marginTop=value*0.3+'px';
+                btn.style.marginTop=value*0.8+'px';
+                header.style.top=value*0.5+'px';
+            })
+        </script>
+    </body>
+</html>
